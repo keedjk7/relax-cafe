@@ -1,0 +1,13 @@
+.relax-cafe-header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    /* background-color: aqua; */
+    border-bottom: 1px solid greenyellow;
+}
+
+.relax-cafe-header-logo{
+    height: 50px;
+}

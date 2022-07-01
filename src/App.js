@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import AppHeader from './components/AppHeader';
+import DrinkItems from './components/DrinkItems';
+import DrinkPost from './components/DrinkPost';
+import drinks from './datas/drinks';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    const drinkElements = drinks.map((drink, index) => {
+        return <DrinkItems key={index} drink={drink} />
+    });
+    return (
+        <div className="App">
+            <AppHeader />
+            <div className="picture-grid">
+                {drinkElements}
+            </div>
+        </div>
   );
 }
 
