@@ -1,12 +1,13 @@
 import './DrinkPost.css'
 
-function DrinkPost(){
+function DrinkPost(prop){
+    const {drink} = prop;
     return(
         <dic className="drink-post">
-            <div className="drinks-post-bg" />
-            <div clasName="drinnk-post-conntent">
-                <img src="../images/ice-coffee.jpg" />
-                <h4>กาแฟเย็น</h4>
+            <div className = "drink-post-bg" />
+            <div className = "drink-post-content">
+                <img src={drink.thumnailUrl} />
+                <h4>{drink.title}</h4>
             </div>
         </dic>
     );

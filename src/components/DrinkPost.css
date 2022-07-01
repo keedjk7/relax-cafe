@@ -11,10 +11,29 @@
 }
 
 .drink-post-bg{
-    background-color: rgba(127, 255, 212, 0.796);
+    background-color: gray;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; 
+}
+
+.drink-post-content{
+    position: relative;
+    max-width: 1200px;
+    background-color: black;
+}
+
+.drink-post-content img{
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 120px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.drink-post-content h4{
+    color: lightskyblue;
+    text-align: center;
 }
