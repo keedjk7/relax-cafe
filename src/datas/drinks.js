@@ -16,7 +16,7 @@ const drinks = [
         thumnailUrl:'../images/ice-green-tea.jpg'
     },
     {
-        title:'บลูฮาวาย]' ,
+        title:'บลูฮาวาย' ,
         thumnailUrl:'../images/blue-hawaii.jpg'
     },
     {
